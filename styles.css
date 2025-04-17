@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #fff;
+  color: black;
+}
+
+/*  NAVBAR  */
+.navbar{
+  position: absolute;
+  top: auto;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:auto;
+  max-width: 80%;
+  margin: auto;
+}
+
+.nav-left{
+  display: flex;
+  gap: 30px;
+}
+.link{
+  display: flex;
+  gap: 20px;
+  margin-right: 5px;
+}
+
+.link a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.link a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* FIGMA LOGO */
+.figma-logo{
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* SOCIAL LOGOS */
+.social-logo{
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.social-logo a i{
+  width: 17px;
+  height: 17px;
+  color: #fff;
+}
+
+/* HERO SECTION */
+.hero{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.first{
+  font-size: 30px;
+  font-weight: 700px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.second{
+  max-width: 641px;
+  width: 95%;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.hero-section button{
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 7px 35px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+}
+.hero-section button:hover{
+  background-color: #1c7ed6;
+}
+
+.hero::after{
+  content: "";
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  clip-path: polygon(0 0, 50% 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
