@@ -16,11 +16,11 @@
     <div class="nav-container">
       <div class="nav-left">
         <div class="link">
-          <a href="">Home</a>
-          <a href="">Product</a>
-          <a href="">Pricing</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
 
         <div class="figma-logo" >FIGMA LAND</div>
@@ -50,7 +50,7 @@
       </div>
 
       <div class="btn">
-        <button>Try for free</button>
+        <button onclick="handleClick()">Try for free</button>
       </div>
     </div>
   </section>
@@ -62,24 +62,70 @@
    <section class="video-section">
     <div class="content">
       <div class="text-content">
-
-        <h3>Features</h3>
-        <p class="subheading-line1">
+        <h2>Features</h2>
+        <p class="subheading-line-1">
           Most calendars are designed for teams.
         </p>
-        <p class="subheading-line2">
+        <p class="subheading-line-2">
           Slate is designed for freelancers
         </p>
-
       </div>
 
-      
+      <div class="video-section-grid">
+        <div class="grid-item">
+          <div class="grid-icon">
+            <i class="fa fa-fort-awesome" aria-hidden="true"></i>
+          </div>
+          <div class="grid-heading">
+            <h4>Design with real data</h4>
+          </div>
+          <div class="gird-content">
+            <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+        </div>
 
+        <div class="grid-item">
+          <div class="grid-icon">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </div>
+          <div class="grid-heading">
+            <h4>Design with real data</h4>
+          </div>
+          <div class="gird-content">
+            <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-icon">
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+          </div>
+          <div class="grid-heading">
+            <h4>Design with real data</h4>
+          </div>
+          <div class="gird-content">
+            <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO DIV START -->
+      <div class="video-container paused">
+        <video id="videoFeature" src="video.mp4" muted></video>
+
+        <div id="playIcon" class="video-play-icon">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!-- VIDEO DIV ENDED -->
 
     </div>
    </section>
 
 
 
+
+
+   <script src="script.js"></script>
 </body>
 </html>
