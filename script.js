@@ -28,6 +28,43 @@ playIcon.addEventListener("click", ()=>{
 
 
 
+// TESTIMONIAL SECTION START
+const testimonial = document.querySelectorAll('.testimonial');
+
+
+
+
+
+
+
+
+
+
+
+// CONTACT FORM START
+const form = document.getElementById("contactform");
+const modal = document.getElementById("successModal");
+const closeBtn = document.getElementById("closeModal")
+
+form.addEventListener("submit", function (e){
+  e.preventDefault();
+
+  if(form.checkValidity()){
+    modal.style.display = "block";
+    form.reset();
+  }
+});
+
+closeBtn.addEventListener("click", function(){
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+  if(e.target === modal){
+    modal.style.display = "none";
+  }
+});
+
 
 
 

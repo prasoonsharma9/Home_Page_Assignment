@@ -52,7 +52,7 @@
       </div>
 
       <div class="btn">
-        <button onclick="handleClick()">Try for free</button>
+        <button class="try-btn" onclick="handleClick()">Try for free</button>
       </div>
     </div>
   </section>
@@ -135,7 +135,7 @@
           <p class="mid-subheading-line-1">Most calenders are designed for teams</p>
           <p class="mid-subheading-line-2">Slate is designed for freelancers</p>
 
-          <button>Try for free</button>
+          <button class="try-btn">Try for free</button>
         </div>
 
 
@@ -191,7 +191,7 @@
       <div class="partner-item">
         <img src="partner-img.jpg" alt="">
       </div>
-      <button>Try for free</button>
+      <button class="try-btn">Try for free</button>
     </div>
   </section>
 
@@ -425,23 +425,21 @@
           <p>Slate is designed for freelancers</p>
         </div>
         <div class="cont-content">
-          <div class="cont-left">
+          <div>
             <form class="contact-form" id="contactform">
               <h3>Contact Us</h3>
               <input type="text" placeholder="Your Name" name="name" required >
               <input type="email" placeholder="Your Email" name="email" required>
 
               <textarea name="message" placeholder="Your message" required></textarea>
-              <button>Send</button>
+              <button class="cont-btn">Send</button>
             </form>
           </div>
 
           <div class="cont-right">
             <div class="info">
               <div class="location-icon">
-                <p>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <p>
                   6386 Spring St undefined Anchorage,
                 </p>
@@ -451,34 +449,107 @@
               </div>
 
               <div class="mobile">
-                <p>
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
-                </p>
+                <i class="fa fa-mobile" aria-hidden="true"></i>
                 <p>
                   (843) 555-0130
                 </p>
               </div>
 
               <div class="mail">
-                <p>
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                </p>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 <p>
                   willie.jennings@example.com
                 </p>
               </div>
             </div>
-            <div class="map-container">
 
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11022802.257292896!2d68.17664507319657!3d20.593684048800384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff9d2e55555%3A0x9bbd6f1f52c1e3b9!2sIndia!5e0!3m2!1sen!2sin!4v1713633891234!5m2!1sen!2sin" 
+              allowfullscreen=""
+              loading=""
+              referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
             <div class="cont-social-icons">
-
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <p>Your query sent successfully</p>
+          <div id="closeModal">
+            <button class="close-btn">Close</button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="pages">
+            <h2>Pages</h2>
+            <ul>
+              <li>Home</li>
+              <li>Features</li>
+              <li>Partners</li>
+              <li>Pricing</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div class="tomothy">
+            <h2>Tomothy</h2>
+            <ul>
+              <li>Eleanor Edwards</li>
+              <li>Ted Robertson</li>
+              <li>Annette Russell</li>
+              <li>Jennie Mckinney</li>
+              <li>Gloria Richards</li>
+            </ul>
+          </div>
+
+          <div class="names">
+            <h2>Jane Black</h2>
+            <ul>
+              <li>Philip Jones</li>
+              <li>Product</li>
+              <li>Colleen Russell</li>
+              <li>Marvin Hawkins</li>
+              <li>Bruce Simmmons</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-icons">
+            <div class="location">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>7480 Mistwood Hollo</span>
+            </div>
+
+            <div class="mobile">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <span>(239) 555-0108</span>
+            </div>
+            
+            <div class="footer-social-icons">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
